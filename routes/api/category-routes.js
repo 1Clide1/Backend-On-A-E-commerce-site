@@ -6,11 +6,48 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
+  Category.findAll({
+    include: {
+      model: Product,
+      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+    }
+  })
+  .then(ecommerceDb => {
+    if(!ecommerceDb){
+      res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
+      return;
+    }
+    res.json(ecommerceDb);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err)
+  });
 });
 
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  Category.findOne({
+    where: {
+      id: req.params.id
+    },
+    include: {
+      model: Product,
+      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+    }
+  })
+  .then(ecommerceDb => {
+    if(!ecommerceDb){
+      res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
+      return;
+    }
+    res.json(ecommerceDb);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err)
+  });
 });
 
 router.post('/', (req, res) => {
