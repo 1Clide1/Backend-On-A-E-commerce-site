@@ -1,7 +1,19 @@
 # Backend Of An E-commerce Site
-  
+
+## Link-To-Video-Showcase
+
+[Click Here To Watch :)](n/a)
+
+## Link-To-Website
+
+[Click To View The Site:)](https://backend-on-a-e-commerce-site.herokuapp.com/)
+
 ## Table Of Contents
-  
+
+* [Link To Video Showcase](#Link-To-Video-Showcase)
+
+* [Link To Webiste](#Link-To-Website)
+
 * [Description](#Description)
   
 * [Author](#Author)
