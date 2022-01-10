@@ -14,7 +14,7 @@ router.use((req, res) => {
   <h3>/api/products/id</h3> 
   <h3>/api/categories</h3>
   <h3>/api/categories/id</h3>
-  <h2>You can use insomnia in real time to update the data check the video in the readme file to get an understanding on what you can post, update, and delete on each endpoint</h2>
+  <h2>You can use insomnia in real time to update the data check the video in the readme file to get an understanding on what you can post, update, and delete on each endpoint.</h2>
    `)
 });
 
