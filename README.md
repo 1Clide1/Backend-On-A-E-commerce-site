@@ -30,7 +30,7 @@
   
 ## Description
   
-In this project I was more focused on what was going on the backend of things. With that I fleshed out all of the needed models for this backend to function. It was all things that are usually seen in a store site, like categories, products, product tags, etc. I also specified what type of data was being recieved under each possible endpoints. When viewing each method with the help of insomnia or looking at the endpoints through a brower, you would be presented with the reletive data for that endpoint in a json format. It's pretty interesting to look through and this project helped me understand what you could do with a database and with the backend of a server. It gave me ideas on how I could utilize the front end in unique ways to represent that data.
+In this project I was more focused on what was going on the backend of things. I fleshed out all of the needed SQL models for this backend to function. The data represented what you would see in a store. I was basically in charge of specifying what would happen in these api routes. When viewing each method with the help of insomnia or looking at the endpoints through a browser, you would be presented with the reletive data for that endpoint in a json format. It's pretty interesting to look through and this project helped me understand what you could do with a database and with the backend of a server. It gave me ideas on how I could utilize the front end in unique ways to represent that data.
   
 ## Technology
   
