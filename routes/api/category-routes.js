@@ -12,12 +12,12 @@ router.get('/', (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
-  .then(ecommerceDb => {
-    if(!ecommerceDb){
+  .then(dbCategoryData => {
+    if(!dbCategoryData){
       res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
       return;
     }
-    res.json(ecommerceDb);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
@@ -37,12 +37,12 @@ router.get('/:id', (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
-  .then(ecommerceDb => {
-    if(!ecommerceDb){
+  .then(dbCategoryData => {
+    if(!dbCategoryData){
       res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
       return;
     }
-    res.json(ecommerceDb);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
@@ -67,12 +67,12 @@ router.put('/:id', (req, res) => {
         id: req.params.id
     }
   })
-  .then(ecommerceDb => {
-    if(!ecommerceDb){
+  .then(dbCategoryData => {
+    if(!dbCategoryData){
       res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
       return;
     }
-    res.json(ecommerceDb);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
@@ -87,12 +87,12 @@ router.delete('/:id', (req, res) => {
         id: req.params.id
     }
   })
-  .then(ecommerceDb => {
-    if(!ecommerceDb){
+  .then(dbCategoryData => {
+    if(!dbCategoryData){
       res.status(404).json({message: 'No categories are present, try to re-seed your database.'});
       return;
     }
-    res.json(ecommerceDb);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
