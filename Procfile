@@ -1,2 +1,2 @@
-web: npm run seed
-web: npm start
+web: node seeds/index.js,
+web: nodemon server.js
